@@ -1,0 +1,22 @@
+import { Component } from '@angular/core';
+
+// export interface Post {
+//   title: string
+//   port: string
+//   type: string
+// }
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
+})
+export class AppComponent {
+    // posts: Post[] = [
+    //   {title: 'GO Ms Chief', port: 'Port Canaveral', type:'High Speed Craft'},
+    //   {title: 'A Shortfall of Gravitas', port: 'Port Canaveral', type:'Barge'},
+    //   {title: 'American Islander', port: 'Port of Los Angeles', type:'Cargo'},
+    //   {title: 'Hollywood', port: 'Fort Lauderdale', type:'Tugft'},
+    //   {title: 'Of Course I Still Love You', port: 'Port Canaveral', type:'Barge'},
+    // ]
+}
