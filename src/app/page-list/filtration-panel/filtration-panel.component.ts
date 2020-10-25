@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-filtration-panel',
@@ -6,11 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./filtration-panel.component.scss']
 })
 export class FiltrationPanelComponent implements OnInit {
-  searchName=''
+  @Output() searchName = new EventEmitter();
+
+  public searchNameString = '';
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  public nameSearch(): void {
+    this.searchName.emit(this.searchNameString);
+  }
 }

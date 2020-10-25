@@ -1,15 +1,14 @@
-<div class="block">
-    <header>
-        <h1>SpaceX Ships</h1>
-    </header>
+<div class="content">
+    <div class="header">
+        SpaceX Ships
+    </div>
 
-    <div  class="container">
-        <app-card ></app-card>
+    <div class="card-list">
+        <app-card *ngFor="let post of posts$ | async" [post]="post"></app-card>
     </div>
 </div>
 
 
-<div class="filt-container">
-    <router-outlet></router-outlet>  
- </div>
-
+<div class="filter">
+    <app-filtration-panel (searchName)="searchName($event)"></app-filtration-panel>
+</div>

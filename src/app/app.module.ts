@@ -7,7 +7,8 @@ import { PageListComponent } from './page-list/page-list.component';
 import { PageCardComponent } from './page-card/page-card.component';
 import { CardComponent } from './page-list/card/card.component';
 import { FiltrationPanelComponent } from './page-list/filtration-panel/filtration-panel.component';
-import {SearchPipe} from './page-list/search.pipe'
+import { SearchPipe } from './page-list/search.pipe';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,9 @@ import {SearchPipe} from './page-list/search.pipe'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule    
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

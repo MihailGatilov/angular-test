@@ -1,92 +1,28 @@
-<div ><!--Карточка в списке-->
-    <div *ngFor="let post of posts" class="card" >
-        <div  class="card-header">
-            <h2>{{post.title}}
-            <a [routerLink]="['/card']" ><img src="assets\img\icon.png" alt="Открыть" width= "16px" height="16px"></a>
-            </h2>
+<div class="card">
+    <div class="card__header">
+        <div class="card__header-name">
+            {{ post.name }}
         </div>
-        <div class="content" >
-            <div>
-                <small>Тип</small>
-                <small class="title">{{post.type}}</small>
-                </div>
-            <div>
-                    <small>Порт</small>
-                    <small class="title">{{post.port}}</small>
+        <img src="assets\img\icon.png" alt="Открыть" [routerLink]="['/card']">
+    </div>
+    
+    <div class="card__content">
+        <div class="card__content-property">
+            <div class="card__content-property-name">
+                Тип
+            </div>
+            <div class="card__content-property-value">
+                {{ post.type }}
+            </div>
+        </div>
+
+        <div class="card__content-property">
+            <div class="card__content-property-name">
+                Порт
+            </div>
+            <div class="card__content-property-value">
+                {{ post.home_port }}
             </div>
         </div>
     </div>
-</div>    
- <!-- Карточка в списке
-<div class="card">
-        <div class="card-header">
-            <h2>A Shortfall of Gravitas
-            <a [routerLink]="['/card']"><img src="assets\img\icon.png" alt="Открыть" width= "16px" height="16px"></a>
-            </h2>
-        </div>
-        <div class="content">
-            <div>
-                <small>Тип</small>
-                <small class="title">Barge</small>
-            </div>
-            <div>
-                <small>Порт</small>
-                <small class="title">Port Canaveral</small>
-            </div>
-        </div>
 </div>
-    Карточка в списке
-    <div class="card">
-        <div class="card-header">
-            <h2>American Islander
-            <a [routerLink]="['/card']"  ><img src="assets\img\icon.png" alt="Открыть" width= "16px" height="16px"></a>
-            </h2>
-        </div>
-        <div class="content">
-            <div>
-                <small>Тип</small>
-                <small class="title">Cargo</small>
-            </div>
-            <div>
-                <small>Порт</small>
-                <small class="title">Port of Los Angeles</small>
-            </div>
-        </div>
-</div>
-    Карточка в списке
-<div class="card">
-        <div class="card-header">
-            <h2>Hollywood
-            <a [routerLink]="['/card']"  ><img src="assets\img\icon.png" alt="Открыть" width= "16px" height="16px"></a>
-            </h2>
-        </div>
-        <div class="content">
-            <div>
-                <small>Тип</small>
-                <small class="title">Tugft</small>
-            </div>
-            <div>
-                <small>Порт</small>
-                <small class="title">Fort Lauderdale</small>
-            </div>
-        </div>
-</div>
-    Карточка в списке
-<div class="card">
-        <div class="card-header">
-            <h2>Of Course I Still Love You
-            <a [routerLink]="['/card']"  ><img src="assets\img\icon.png" alt="Открыть" width= "16px" height="16px"></a>
-            </h2>
-        </div>
-        <div class="content">
-            <div>
-                <small>Тип</small>
-                <small class="title">Barge</small>
-            </div>
-            <div>
-                <small>Порт</small>
-                <small class="title">Port Canaveral</small>
-            </div>
-        </div>
-</div> -->
-

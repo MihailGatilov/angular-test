@@ -1,0 +1,43 @@
+
+.card {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #a5a5a5;
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 29px;
+
+    .card__header-name {
+      margin-right: 19px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 29px;
+  
+    &-property {
+      width: 453px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      &-name {
+        margin-right: 104px;
+      }
+      &-value {
+        color: #2962FF;
+      }
+    }
+  }
+}
+
+
+img {
+    width: 16px;
+    height: 16px;
+}

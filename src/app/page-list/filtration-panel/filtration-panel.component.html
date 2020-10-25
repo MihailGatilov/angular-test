@@ -3,12 +3,12 @@
 </div>
 
 <div class="name-filter">
-     <input  type="text" placeholder="Название" >
+    <input type="text" placeholder="Название" [(ngModel)]="searchNameString" (input)="nameSearch()">
 </div>
 
 <div class="port">Порт</div>
 <div class="input-name">
-    <input  type="text" placeholder="Название" value="Выбраны2">
+    <input type="text" placeholder="Название" value="Выбраны2">
 </div>
 <form class="port-filter">
 
@@ -36,6 +36,5 @@
     <input type="radio" name="type" value="Barge" checked>Barge<br>
     <input type="radio" name="type" value="Cargo">Cargo<br>
     <input type="radio" name="type" value="High Speed Craft" >High Speed Craft<br>
-    <input type="radio" name="type" value="Tug">Tug
-      
+    <input type="radio" name="type" value="Tug">Tug  
 </form>
