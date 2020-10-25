@@ -5,13 +5,13 @@ import { FiltrationPanelComponent } from './page-list/filtration-panel/filtratio
 import { PageListComponent } from './page-list/page-list.component';
 
 const routes: Routes = [
-    
   {
-    path: '', component: PageListComponent, children:[
-    {path: '', component: FiltrationPanelComponent}
-  ]},
+    path: '', component: PageListComponent, children:
+    [
+      {path: '', component: FiltrationPanelComponent}
+    ]
+  },
     {path: 'card', component: PageCardComponent}
-    
   ];
 
 @NgModule({
