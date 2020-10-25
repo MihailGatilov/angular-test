@@ -1,22 +1,23 @@
-<!--Карточка в списке-->
-<div  class="card" >
-    <div class="card-header">
-        <h2>GO Ms Chief
-         <a [routerLink]="['/card']" ><img src="assets\img\icon.png" alt="Открыть" width= "16px" height="16px"></a>
-         </h2>
-    </div>
-    <div class="content" >
-         <div>
-            <small>Тип</small>
-            <small class="title">High Speed Craft</small>
+<div ><!--Карточка в списке-->
+    <div *ngFor="let post of posts" class="card" >
+        <div  class="card-header">
+            <h2>{{post.title}}
+            <a [routerLink]="['/card']" ><img src="assets\img\icon.png" alt="Открыть" width= "16px" height="16px"></a>
+            </h2>
+        </div>
+        <div class="content" >
+            <div>
+                <small>Тип</small>
+                <small class="title">{{post.type}}</small>
+                </div>
+            <div>
+                    <small>Порт</small>
+                    <small class="title">{{post.port}}</small>
             </div>
-        <div>
-                <small>Порт</small>
-                <small class="title">Port Canaveral</small>
         </div>
     </div>
-</div>
- <!--Карточка в списке-->
+</div>    
+ <!-- Карточка в списке
 <div class="card">
         <div class="card-header">
             <h2>A Shortfall of Gravitas
@@ -34,8 +35,8 @@
             </div>
         </div>
 </div>
-<!--Карточка в списке-->
-<div class="card">
+    Карточка в списке
+    <div class="card">
         <div class="card-header">
             <h2>American Islander
             <a [routerLink]="['/card']"  ><img src="assets\img\icon.png" alt="Открыть" width= "16px" height="16px"></a>
@@ -52,7 +53,7 @@
             </div>
         </div>
 </div>
- <!--Карточка в списке-->
+    Карточка в списке
 <div class="card">
         <div class="card-header">
             <h2>Hollywood
@@ -70,7 +71,7 @@
             </div>
         </div>
 </div>
-<!--Карточка в списке-->
+    Карточка в списке
 <div class="card">
         <div class="card-header">
             <h2>Of Course I Still Love You
@@ -87,5 +88,5 @@
                 <small class="title">Port Canaveral</small>
             </div>
         </div>
-</div>
+</div> -->
 
