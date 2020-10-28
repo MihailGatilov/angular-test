@@ -9,6 +9,8 @@ import { CardComponent } from './page-list/card/card.component';
 import { FiltrationPanelComponent } from './page-list/filtration-panel/filtration-panel.component';
 import { SearchPipe } from './page-list/search.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { GraphQLModule } from './graphql.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    GraphQLModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

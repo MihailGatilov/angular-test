@@ -1,7 +1,10 @@
-<div class="card">
+<div *ngIf="loading">
+    Loading...
+</div>
+<div *ngFor="let ship of ships" class="card">
     <div class="card__header">
         <div class="card__header-name">
-            {{ post.name }}
+            {{ ship.name }}
         </div>
         <img src="assets\img\icon.png" alt="Открыть" [routerLink]="['/card']">
     </div>
@@ -12,7 +15,7 @@
                 Тип
             </div>
             <div class="card__content-property-value">
-                {{ post.type }}
+                {{ ship.type }}
             </div>
         </div>
 
@@ -21,7 +24,7 @@
                 Порт
             </div>
             <div class="card__content-property-value">
-                {{ post.home_port }}
+                {{ ship.home_port }}
             </div>
         </div>
     </div>

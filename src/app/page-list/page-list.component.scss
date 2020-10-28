@@ -1,6 +1,6 @@
 :host {
     width: 100%;
-    height: 100vh;
+    //height: 100%;
     display: flex;
     flex-direction: row;
 
@@ -8,6 +8,7 @@
         flex: auto;
         background-color: #FAFAFA;
         padding: 52px 64px 162px;
+        height: 120vh;
 
         .header{
             margin-bottom: 64px;
@@ -17,20 +18,14 @@
             line-height: 32px;
         }
     
-        .card-list {
-        }
+        // .card-list {
+        // }
     }
 
     .filter {
-        // position: absolute;
-        // right: 25%;
-        // left: 75%;
-        // width: 30%;
-        // height: 1080px;
-        // top: 0;
         width: 393px;
         min-height: fit-content;
-        height: 100%;
+        height: auto;
         background: #FFFFFF;
         border-left: 1px solid #A5A5A5;
     }

@@ -20,9 +20,15 @@ h2 {
         width: 330px;
         border:none;
         border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+        outline: none;
+        &:focus{
+            border-bottom: 1px solid #347CFF;
+            caret-color: #347CFF;
+        }
     }
-    
+      
 }
+
 .input-name{
     margin-top: 0;
     margin-bottom: 0;
@@ -69,10 +75,4 @@ h2 {
     font-weight: bold;
     font-size: 16px;
     line-height: 19px;
-}
-.dropdown{
-    position: fixed;
-
-    margin-bottom: 1rem;
-    display: none;
 }

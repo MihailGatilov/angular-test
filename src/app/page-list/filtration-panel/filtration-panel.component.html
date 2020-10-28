@@ -12,28 +12,14 @@
 </div>
 <form class="port-filter">
 
-    <input type="checkbox" name="port" value="Port Canaveral" checked> Port Canaveral<br>
+    <input type="checkbox" name="port" value="Port Canaveral" > Port Canaveral<br>
     <input type="checkbox" name="port" value="Port of Los Angeles"> Port of Los Angeles<br>
     <input type="checkbox" name="port" value="Fort Lauderdale"> Fort Lauderdale
       
 </form>
-<div class="dropdown">
-    <div class="name-filter">
-        <input  type="text" placeholder="Название">
-   </div>
-   <div class="name-filter">
-    <input  type="text" placeholder="Название">
-    </div>
-    <div class="name-filter">
-        <input  type="text" placeholder="Название">
-   </div>
-   <div class="name-filter">
-    <input  type="text" placeholder="Название">
-</div>
-</div>
-<form class="type-filter">
+<form [formGroup]="" class="type-filter">
     <div class="name">Тип</div>
-    <input type="radio" name="type" value="Barge" checked>Barge<br>
+    <input type="radio" name="type" value="Barge" >Barge<br>
     <input type="radio" name="type" value="Cargo">Cargo<br>
     <input type="radio" name="type" value="High Speed Craft" >High Speed Craft<br>
     <input type="radio" name="type" value="Tug">Tug  

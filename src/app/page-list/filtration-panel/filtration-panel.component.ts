@@ -19,3 +19,7 @@ export class FiltrationPanelComponent implements OnInit {
     this.searchName.emit(this.searchNameString);
   }
 }
+
+export class ReactiveRadioButtonComp{
+  
+}
